@@ -1,145 +1,89 @@
-# 📈 AI for Stock Decision Making
+# Ḥādhiq — Home Services Booking Platform
 
-## 🔍 Project Overview
-This project applies **Machine Learning and Deep Learning techniques** to historical stock market data in order to support **investment decision-making**.  
-Instead of only predicting future stock prices, the project focuses on transforming predictions into **actionable decisions**:  
-👉 **Buy** or **Not Buy**.
+## Project Overview
 
-The system analyzes time-based stock behavior across multiple sectors and companies to learn patterns that help investors make more informed decisions.
+Ḥādhiq is a web-based platform that connects users with professional home service providers such as cleaners, plumbers, repair technicians, and landscapers.
 
----
+The platform allows customers to search for services, book appointments, and review service providers. Service providers can manage their services and receive booking requests through the system.
 
-## 🎯 Problem Statement
-Stock market prices are highly volatile and influenced by many factors, making manual analysis difficult and unreliable for individual investors.  
-Relying solely on intuition or basic indicators can lead to poor investment decisions.
-
-**The challenge:**  
-How can historical stock data be leveraged using AI models to predict future price movements and convert them into clear investment decisions?
+This project was developed as part of a **Software Engineering university course project at King Saud University**.
 
 ---
 
-## 💡 Proposed Solution
-This project builds an AI-driven pipeline that:
-1. Processes historical stock market data.
-2. Constructs time windows to capture temporal patterns.
-3. Trains multiple models to predict future prices.
-4. Converts predictions into **Buy / Not Buy** decisions.
-5. Compares model performance to select the most effective approach.
+## Problem
 
-The solution emphasizes **decision-oriented AI**, not just raw prediction.
+Finding reliable home maintenance and repair services can be difficult. Many people rely on word-of-mouth or random online searches, which makes it hard to compare services and find trusted providers.
+
+There is a need for a centralized platform where users can easily browse, compare, and book services in one place.
 
 ---
 
-## 📊 Dataset Description
-- Real historical stock market data.
-- Covers **10 different sectors**.
-- Includes **10 companies per sector**.
-- Time span: up to **4 years of historical data**.
-- Data organized with company and sector information.
-- Features include stock prices over time.
+## Solution
 
-> The dataset structure allows both cross-sector analysis and time-series modeling.
+Ḥādhiq provides a platform where:
 
----
+* Customers can browse available services
+* Users can book appointments online
+* Service providers can list and manage their services
+* Customers can leave reviews and ratings
 
-## ⚙️ Tools & Technologies
-- **Programming Language:** Python  
-- **Environment:** Jupyter Notebook  
-- **Libraries:**
-  - NumPy
-  - Pandas
-  - Matplotlib
-  - Seaborn
-  - Scikit-learn
-  - TensorFlow / Keras
+This simplifies the process of connecting customers with reliable home service professionals.
 
 ---
 
-## 🔎 Methodology
+## Features
 
-### 1️⃣ Data Cleaning & Preprocessing
-- Handling missing values.
-- Selecting relevant features.
-- Formatting data for time-series analysis.
-- Preparing clean and structured datasets for modeling.
+### Customer Features
 
----
+* Register and login
+* Search for services
+* View provider profiles
+* Book services
+* Manage reservations
+* Leave reviews and ratings
 
-### 2️⃣ Time Window Construction
-Instead of analyzing single-day prices, the project builds **time windows** that represent stock behavior over consecutive days.
+### Service Provider Features
 
-This allows models to learn:
-- Trends
-- Volatility
-- Temporal dependencies
+* Create and manage service listings
+* Receive booking requests
+* Accept or decline bookings
+* Manage appointments
 
-This step significantly improves the realism of predictions.
+### System Features
 
----
-
-### 3️⃣ Model Development
-Multiple models are trained and evaluated:
-
-- **Linear Regression**
-  - Used as a baseline model.
-  - Helps assess whether the data is predictable.
-
-- **Random Forest**
-  - Captures non-linear relationships.
-  - Performs well in decision-based classification.
-
-- **LSTM (Long Short-Term Memory)**
-  - A deep learning model specialized for time-series data.
-  - Learns long-term temporal patterns in stock prices.
+* Service search and filtering
+* Booking management
+* Review and rating system
+* Notifications for booking updates
 
 ---
 
-### 4️⃣ Decision Classification
-Predicted prices are converted into:
-- **Buy**
-- **Not Buy**
+## Technologies Used
 
-This step transforms numerical predictions into practical investment decisions.
+### Frontend
 
----
+![HTML](https://img.shields.io/badge/HTML5-orange?style=flat-square\&logo=html5)
+![CSS](https://img.shields.io/badge/CSS3-blue?style=flat-square\&logo=css3)
+![JavaScript](https://img.shields.io/badge/JavaScript-yellow?style=flat-square\&logo=javascript)
 
-### 5️⃣ Model Evaluation
-Models are evaluated using:
-- Accuracy
-- ROC Curve
-- Comparative performance analysis
+### Backend
 
-The best-performing model is selected based on both prediction quality and decision reliability.
+![PHP](https://img.shields.io/badge/PHP-purple?style=flat-square\&logo=php)
 
----
+### Database
 
-## 📈 Results & Insights
-- Time-series models outperform simple regression approaches.
-- LSTM demonstrates strong performance in capturing temporal stock behavior.
-- Decision-based classification provides clearer value than raw price prediction.
-- The system shows potential for real-world investment support tools.
+![MySQL](https://img.shields.io/badge/MySQL-blue?style=flat-square\&logo=mysql)
+
+### Architecture
+
+Client–Server Architecture
 
 ---
 
-## 🚀 Live Testing
-The project includes a live testing phase where:
-- Trained models are loaded.
-- Next-day stock prices are predicted.
-- Immediate **Buy / Not Buy** decisions are generated.
+## My Contribution
 
-This demonstrates the system’s applicability beyond academic experimentation.
-
----
-
-## 📝 Conclusion
-This project highlights how AI can be used to bridge the gap between **data analysis and decision-making** in financial markets.  
-By combining time-series modeling with machine learning, the system provides a structured and scalable approach to stock investment decisions.
-
----
-
-## 👥 Project Contributors
-This project was developed as a **collaborative academic team project**.  
-My contribution focused on data preprocessing, model building, and performance evaluation.
-
-Information Technology – Artificial Intelligence & Data Science  
-King Saud University
+- Developed the **service provider homepage interface**
+- Implemented **add service functionality for providers**
+- Built **user and provider profile pages**
+- Contributed to **service management features**
+- Participated in **system testing and feature validation**
